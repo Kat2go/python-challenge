@@ -24,7 +24,7 @@ with open(file_to_load) as election_data:
 
     for row in reader:
 
-        print(". ", end=""),
+        print(".", end=""),
 
         #add to the total vote count
         ttl_votes = ttl_votes + 1
@@ -44,11 +44,11 @@ with open(file_to_load) as election_data:
 with open(file_to_output, "w") as txt_file:
 
     # Print the final vote count (to terminal)
-    election_results = (
+    election_results =(
         f"\nElection Results\n"
         f"---------------------\n"
         f"Total Votes: {ttl_votes}\n"
-        f"---------------------\n)
+        f"---------------------\n)")
     print(election_results, end="")
 
     # Save the final vote count to the text file
